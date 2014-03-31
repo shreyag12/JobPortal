@@ -12,4 +12,11 @@ $(document).ready(function () {
     })
     return false;
     } */
-});
+    $(document).ready(function () {
+    $('#create_but').click(function () {
+        $('.editprofile').css('display', 'inline');
+        $('#hotjobs').hide();
+       
+    });
+   
+

@@ -14,13 +14,19 @@
     <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery-1.4.1-vsdoc.js"></script>
     <script type="text/javascript" src="Scripts/main.js"></script>
+       
+
     <style type="text/css">
-        .rec-right
+        .style1
         {
-            width: 250px;
-            height: 334px;
+            width: 531px;
+            height: 123px;
         }
+        .style2
+        {}
     </style>
+       
+
 </head>
 <body>
     <form id="form3" runat="server">
@@ -31,15 +37,53 @@
                     Welcome to Online Job Portal
                 </h1>
             </div>
-            <div class="per-menu">
-			    <a href="Default.aspx">Home</a>
-
-			    
-		    </div>
         </div>
-        <div class="per-main">
-            
+        <div class="rec-main">
+            <div class="rec-left" >
+                <div class="rec-dash" style="height: 53px; width: 400px;">
+                  <asp:Button ID="Button4" runat="server" Text="Jobs for you" CssClass="jobuser"/>
+                    <input id="edituser" type="button" value="Edit Profile" />
+                </div>
+                
+                <div id="hotjobs">
+                    <p>When fill method was called, dataadapter will open a connection to database,
+                        executes select command, stores the data retrieved by select command in to
+                        dataset and immediately closes the connection.</p>
+                        <p>As connection to database was closed, any changes to the data in dataset will
+                        not be directly sent to the database and will be made only in the dataset. To
+                        send changes made to data in dataset to the database, Update() method of
+                        the dataadapter is used that has the following syntax. </p>
+                </div>
+                <div class="editprofile">
+                    
+                    <asp:Label ID="Label2" runat="server" Text="name"></asp:Label>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label1" runat="server" Text="Mobile no."></asp:Label>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+
+                    <div class="style1">
+                        
+                        <asp:Label ID="Label3" runat="server" Text="New password"></asp:Label>
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <asp:Label ID="Label4" runat="server" Text="confirm password"></asp:Label>
+                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        <br />
+                        <asp:Label ID="Label5" runat="server" Text="Your skills"></asp:Label>
+                        <asp:TextBox ID="TextBox6" runat="server" CssClass="style2" Height="59px" 
+                            Width="186px"></asp:TextBox>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="userinfo">
+                <h3>Users Info</h3>
+            </div>
          </div>
+           
      </div>
      <div class="footer">
         <div class="clear">
@@ -50,6 +94,13 @@
 		    </div>
         </div>
 	</div>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+&nbsp;&nbsp;&nbsp;
     </form>
 </body>
 </html>
