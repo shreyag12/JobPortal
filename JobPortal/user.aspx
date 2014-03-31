@@ -50,7 +50,7 @@
                         executes select command, stores the data retrieved by select command in to
                         dataset and immediately closes the connection.</p>
                         <p>As connection to database was closed, any changes to the data in dataset will
-                        not be directly sent to the database and will be made only in the dataset. To
+                        not be directly sent to  will be made only in the dataset. To
                         send changes made to data in dataset to the database, Update() method of
                         the dataadapter is used that has the following syntax. </p>
                 </div>
